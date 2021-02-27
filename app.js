@@ -27,7 +27,7 @@ app.use('/auth', authRoutes)
 
 app.use('/', (req, res) => {
     res.json({
-        message: "Welcome to our website"
+        message: "Welcome to our website new change"
     })
 })
 mongoose.connect('mongodb+srv://test:M0EQ59I3nSX3@blog.owd1q.mongodb.net/blog?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
