@@ -28,4 +28,4 @@ const userSchema = new Schema({
 
 const User = model('User', userSchema)
 
-module.exports = User
+module.exports = User// new comment added 0;// new comment added 3;
