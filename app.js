@@ -17,7 +17,7 @@ app.set('views', 'views')
 const middleware = [
     morgan('dev'),
     express.static('public'),
-    express.urlencoded({extended: true}),
+    express.urlencoded({ extended: true }),
     express.json()
 ]
 
@@ -30,14 +30,14 @@ app.use('/', (req, res) => {
         message: "Welcome"
     })
 })
-mongoose.connect('mongodb+srv://test:M0EQ59I3nSX3@blog.owd1q.mongodb.net/blog?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true})
-.then(() => {
-    const PORT = process.env.PORT || 3000
+mongoose.connect('mongodb+srv://test:M0EQ59I3nSX3@blog.owd1q.mongodb.net/blog?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        const PORT = process.env.PORT || 3000
 
-    app.listen(PORT, ()=> {
-        console.log(`Server is listening on ${PORT}`);
-    });
-})
-.catch((e) => {
-    console.log(e)
-})
+        app.listen(PORT, () => {
+            console.log(`Server is listening on ${PORT}`);
+        });
+    })
+    .catch((e) => {
+        console.log(e)
+    })
