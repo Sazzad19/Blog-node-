@@ -22,9 +22,9 @@ const userSchema = new Schema({
         ref: 'Profile'
     }
 },
-{
-    timestamps: true
-})
+    {
+        timestamps: true
+    })
 
 const User = model('User', userSchema)
 
