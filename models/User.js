@@ -22,10 +22,10 @@ const userSchema = new Schema({
         ref: 'Profile'
     }
 },
-{
-    timestamps: true
-})
+    {
+        timestamps: true
+    })
 
 const User = model('User', userSchema)
 
-module.exports = User// new comment added 0;// new comment added 3;
+module.exports = User
